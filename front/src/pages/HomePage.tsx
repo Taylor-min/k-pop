@@ -156,7 +156,7 @@ export default function HomePage() {
       <div className="w-full max-w-md px-4 py-6 sm:py-10">
         {/* 상단 헤더 */}
         <header className="flex justify-between mb-6">
-          <h1 className="text-2xl font-bold">오늘의 아이돌 무대</h1>
+          <h1 className="text-2xl font-bold">오늘의 아이돌 무대 추천</h1>
 
           {authLoading ? (
             <span className="text-xs text-gray-400">loading...</span>
