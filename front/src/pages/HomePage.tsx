@@ -141,7 +141,16 @@ export default function HomePage() {
     : [];
 
   const preview = favoriteStages.slice(0, 5);
-
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-neutral-900 via-neutral-950 to-black text-white flex justify-center pb-20">
+        <div className="w-full max-w-md px-4 py-6 sm:py-10">
+          <div className="text-sm text-gray-400">무대 불러오는 중...</div>
+        </div>
+        <BottomNav />
+      </div>
+    );
+  }
   return (
     <div className="min-h-screen bg-gradient-to-b from-neutral-900 via-neutral-950 to-black text-white flex justify-center pb-20">
       <div className="w-full max-w-md px-4 py-6 sm:py-10">
