@@ -236,7 +236,7 @@ export default function HomePage() {
 
           <button
             onClick={handlePick}
-            className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition mb-2"
+            className="bg-white text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition mb-2"
           >
             오늘의 무대 추천 받기 🔮
           </button>
