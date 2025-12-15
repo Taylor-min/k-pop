@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: kpop-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: kpop_app
+      MYSQL_USER: kpop
+      MYSQL_PASSWORD: 1234
+      TZ: Asia/Seoul
+    ports:
+      - "127.0.0.1:3306:3306"   # ✅ 외부 노출 안 함(서버 내부에서만 접근)
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    command: >
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
